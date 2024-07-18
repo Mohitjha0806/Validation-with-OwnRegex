@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Student Registration Form</title>
     <link href="bootstrap.min.css" rel="stylesheet" />
     <script src="bootstrap.bundle.min.js"></script>
@@ -27,6 +28,7 @@
                             <asp:RegularExpressionValidator ForeColor="Red" ValidationExpression="[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){6,18}[a-zA-Z0-9]$"
                                 ErrorMessage="Enter valid Username" ControlToValidate="txt_Username" runat="server" Display="Dynamic" ValidationGroup="a" />
                         </div>
+                    
 
                         <div class="col-md-4">
                             <asp:Label Text="Password" runat="server" ID="lbl_Password" CssClass="form-label fw-semibold" />
